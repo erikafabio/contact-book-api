@@ -8,6 +8,11 @@ export const createUserService = async ({ name, email, password, isAdm, phoneNum
     
     const userRepository = AppDataSource.getRepository(User)
 
+    const findedUser = await userRepository.findOneBy({email: email})
+    if(findedUser){
+        throw new AppError(400, 'Email already exist')
+    }
+
     if(!password){
         throw new AppError(400, 'Password is missing')
     }
