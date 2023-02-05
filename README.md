@@ -588,7 +588,7 @@ vazio
 | 404 Bad Request	| Contact not found|
 
 --
-# 3. **Sobre os testes**
+# **Sobre os testes**
 [ Voltar ao Índice de Conteúdos ](#índice-de-conteúdos)
 
 
