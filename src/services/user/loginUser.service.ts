@@ -11,13 +11,13 @@ export const loginUserService = async ({email, password}: IUserLogin): Promise<s
     const user = await userRepository.findOneBy({ email: email})
 
     if(!user){
-        throw new AppError(403, "Invalid user or password")
+        throw new AppError(403, "Invalid email or password")
     }
 
     const passwordMatch = await compare(password, user.password)
 
     if(!passwordMatch){
-        throw new AppError(403, "Invalid user or password")
+        throw new AppError(403, "Invalid email or password")
     }
 
     const token = jwt.sign({isAdm: user.isAdm}, process.env.SECRET_KEY as string, {

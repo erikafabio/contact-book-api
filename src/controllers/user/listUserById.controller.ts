@@ -1,3 +1,4 @@
+import { instanceToPlain } from "class-transformer";
 import { Request, Response } from "express";
 import { listUserByIdService } from "../../services/user/listUserById.service";
 
@@ -7,5 +8,5 @@ export const listUserByIdController = async (req: Request, resp: Response) => {
 
     const userFinded = await listUserByIdService(id)
 
-    return resp.status(200).json(userFinded)
+    return resp.status(200).json(instanceToPlain(userFinded))
 }
