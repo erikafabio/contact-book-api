@@ -3,8 +3,8 @@
 ## Índice de Conteúdos
 
 - [Instalando Dependências](#instalando-dependências)
-- [Endpoints](#2-endpoints)
-- [Sobre os testes](#3-sobre-os-testes)
+- [Endpoints](#endpoints)
+- [Sobre os testes](#sobre-os-testes)
 
 ## Instalando Dependências
 Para iniciar a api é necessário instalar as dependências presentes no package.json, utilize o comando:
@@ -41,7 +41,7 @@ Execute as migrations com o comando:
 yarn typeorm migration:run -d src/data-source.ts
 ```
 ---
-## 2. Endpoints
+## Endpoints
 ### Índice
 
 - [User](#1-users)
@@ -60,7 +60,7 @@ yarn typeorm migration:run -d src/data-source.ts
 
 ---
 ## 1. **Users**
-[ Voltar para os Endpoints ](#2-endpoints)
+[ Voltar para os Endpoints ](#endpoints)
 
 O objeto User é definido como:
 
@@ -89,7 +89,7 @@ O objeto User é definido como:
 ---
 
 ### 1.1. **Criação de Usuário**
-[ Voltar para os Endpoints ](#2-endpoints)
+[ Voltar para os Endpoints ](#endpoints)
 ### `/users`
 
 ### Exemplo de Request:
@@ -140,7 +140,7 @@ Content-type: application/json
 
 
 ### 1.2. **Listando todos os usuários**
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 ### `/users`
 
 ### Exemplo de Request:
@@ -185,7 +185,7 @@ Vazio
 
 ### 1.3. **Listar Usuário por ID**
 
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 
 ### `/users/:id`
 
@@ -232,7 +232,7 @@ Vazio
 
 ### 1.4. **Atualizando os dados do Usuário**
 
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 
 ### `/users/:id`
 ### Exemplo de Request:
@@ -280,7 +280,7 @@ Content-type: application/json
 
 ### 1.5. **Deletar Usuário**
 
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 
 ### `/users/:id`
 ### Exemplo de Request:
@@ -316,7 +316,7 @@ vazio
 | 404 Bad Request	| User not founded	|
 
 ## 2. **Login**
-[ Voltar para os Endpoints ](#2-endpoints)
+[ Voltar para os Endpoints ](#endpoints)
 
 O objeto de login é definido como:
 
@@ -332,7 +332,7 @@ O objeto de login é definido como:
 | POST     | /login     		 | Login do usuário.	                  					   |
 
 ### 2.1. **Login do user**
-[ Voltar para os Endpoints ](#2-endpoints)
+[ Voltar para os Endpoints ](#endpoints)
 
 ### `/login`
 
@@ -369,7 +369,7 @@ Content-type: application/json
 
 ---
 ## 3. **Contacts**
-[ Voltar para os Endpoints ](#2-endpoints)
+[ Voltar para os Endpoints ](#endpoints)
 
 O objeto Contact é definido como:
 
@@ -394,7 +394,7 @@ O objeto Contact é definido como:
 ---
 
 ### 3.1. **Criação de Contato**
-[ Voltar para os Endpoints ](#2-endpoints)
+[ Voltar para os Endpoints ](#endpoints)
 ### `/contact`
 
 ### Exemplo de Request:
@@ -452,7 +452,7 @@ Content-type: application/json
 
 
 ### 3.2. **Listando todos os contatos**
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 ### `/contact`
 
 ### Exemplo de Request:
@@ -502,7 +502,7 @@ Vazio
 
 ### 3.3. **Atualizando os dados do Contato**
 
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 
 ### `/contact/:id`
 ### Exemplo de Request:
@@ -548,7 +548,7 @@ Content-type: application/json
 
 ### 3.4. **Deletar Contato**
 
-[ Voltar aos Endpoints ](#2-endpoints)
+[ Voltar aos Endpoints ](#endpoints)
 
 ### `/contact/:id`
 ### Exemplo de Request:
@@ -583,7 +583,9 @@ vazio
 | 401 Unauthorized	| Invalid token		|
 | 404 Bad Request	| Contact not found|
 
+--
 # 3. **Sobre os testes**
+[ Voltar aos Endpoints ](#endpoints)
 
 Essa aplicação possui testes, que serão utilizados para validar, se todas as regras de negócio foram aplicadas de maneira correta.
 
