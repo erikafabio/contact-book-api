@@ -591,6 +591,7 @@ vazio
 # 3. **Sobre os testes**
 [ Voltar ao Índice de Conteúdos ](#índice-de-conteúdos)
 
+
 Essa aplicação possui testes, que serão utilizados para validar, se todas as regras de negócio foram aplicadas de maneira correta.
 
 Os testes estão localizados em `src/__tests__`.
