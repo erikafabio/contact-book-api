@@ -8,6 +8,6 @@ import { AppDataSource } from "./data-source"
     })
 
     app.listen(3000, () => {
-        console.log("Server executing")
+        console.log("Server executing on port 3000")
     })
 })()

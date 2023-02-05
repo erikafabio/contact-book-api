@@ -12,8 +12,8 @@ export class Contact {
     @Column({ length: 60 })
     email: string
 
-    @Column()
-    phoneNumber: number
+    @Column({ type: 'bigint' })
+    phoneNumber: string
 
     @CreateDateColumn()
     createdAt: Date
@@ -23,14 +23,4 @@ export class Contact {
     
     @ManyToOne(() => User, user => user.contact, { eager: true})
     user: User
-
-    constructor(id: string, name: string, email: string, phoneNumber: number, createdAt: Date, updatedAt: Date, user: User) {
-        this.id = id,
-        this.name = name
-        this.email = email
-        this.phoneNumber = phoneNumber
-        this.createdAt = createdAt
-        this.updatedAt = updatedAt
-        this.user = user
-    }
 }
