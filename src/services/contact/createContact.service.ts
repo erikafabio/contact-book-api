@@ -9,7 +9,6 @@ export const createContactService = async (idUser: string, { name, email, phoneN
     const userRepository = AppDataSource.getRepository(User)
     const contactRepository = AppDataSource.getRepository(Contact)
 
-    
     const findedUser = await userRepository.findOneBy({ id : idUser })
     if(!findedUser){
         throw new AppError(404, 'User not finded')

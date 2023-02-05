@@ -21,6 +21,6 @@ export class Contact {
     @UpdateDateColumn()
     updatedAt: Date
     
-    @ManyToOne(() => User, user => user.contact, { eager: true})
+    @ManyToOne(() => User)
     user: User
 }

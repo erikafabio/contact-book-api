@@ -1,4 +1,5 @@
 import "reflect-metadata"
+import "express-async-errors"
 import express, { NextFunction, Request, Response } from "express"
 import { AppError } from "./errors/appError"
 import { routes } from "./routes/user.routes"
@@ -14,14 +15,12 @@ app.use("/contact", routesContact)
 app.use((err: Error, req: Request, resp: Response, _:NextFunction) => {
     if(err instanceof AppError){
         return resp.status(err.statusCode).json({
-            status: "error",
             message: err.message
         })
     }
     console.log(err)
 
     return resp.status(500).json({
-        status: "error",
-        message: "Internal server error"
+        message: err.message
     })
 })

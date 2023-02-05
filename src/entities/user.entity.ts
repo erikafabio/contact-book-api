@@ -33,6 +33,6 @@ export class User {
     @Column({ default: true })
     isActive: boolean
 
-    @OneToMany(type => Contact, contact => contact.id)
+    @OneToMany(() => Contact, (contact) => contact.user)
     contact: Contact[]
 }

@@ -20,7 +20,6 @@ export const createUserService = async ({ name, email, password, isAdm, phoneNum
         phoneNumber,
         password: hashedPassword,
         isAdm,
-        contact:[]
     })
 
     await userRepository.save(user)
