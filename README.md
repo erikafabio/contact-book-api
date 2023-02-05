@@ -2,11 +2,11 @@
 
 ## Índice de Conteúdos
 
-- [Instalando Dependências](#1-instalando-dependências)
+- [Instalando Dependências](#instalando-dependências)
 - [Endpoints](#2-endpoints)
 - [Sobre os testes](#3-sobre-os-testes)
 
-## 1. Instalando Dependências
+## Instalando Dependências
 Para iniciar a api é necessário instalar as dependências presentes no package.json, utilize o comando:
 ````
 yarn install
