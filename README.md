@@ -7,7 +7,8 @@
 - [Sobre os testes](#sobre-os-testes)
 
 ## Instalando Dependências
-[ Voltar aos Endpoints ](#endpoints)
+[ Voltar ao Índice de Conteúdos ](#índice-de-conteúdos)
+
 Para iniciar a api é necessário instalar as dependências presentes no package.json, utilize o comando:
 ````
 yarn install
@@ -43,6 +44,8 @@ yarn typeorm migration:run -d src/data-source.ts
 ```
 ---
 ## Endpoints
+[ Voltar ao Índice de Conteúdos ](#índice-de-conteúdos)
+
 ### Índice
 
 - [User](#1-users)
@@ -586,7 +589,7 @@ vazio
 
 --
 # 3. **Sobre os testes**
-[ Voltar aos Endpoints ](#endpoints)
+[ Voltar ao Índice de Conteúdos ](#índice-de-conteúdos)
 
 Essa aplicação possui testes, que serão utilizados para validar, se todas as regras de negócio foram aplicadas de maneira correta.
 
