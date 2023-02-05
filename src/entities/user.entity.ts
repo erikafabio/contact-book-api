@@ -11,7 +11,7 @@ export class User {
     @Column({ length: 60 })
     name: string
 
-    @Column({ length: 60 })
+    @Column({ length: 60, unique: true })
     email: string
 
     @Column({ type: 'bigint' })

@@ -6,7 +6,7 @@ import { AppError } from "../../errors/appError";
 export const updateUserService = async (data: User, idUser: string, isAdm: boolean, idParams: string ): Promise<User | Array<string | number>> => {
     
     if(data.id !== undefined || data.isAdm !== undefined || data.isActive !== undefined) {
-        throw new AppError(401, "You cannote change this information")
+        throw new AppError(401, "You cannot change this information")
     }
 
     const { name, email, phoneNumber, password } = data

@@ -14,6 +14,11 @@ export const createContactService = async (idUser: string, { name, email, phoneN
         throw new AppError(404, 'User not finded')
     }
 
+    const findedEmail = await userRepository.findOneBy({email: email})
+    if(findedEmail){
+        throw new AppError(400, 'Email already exist')
+    }
+
     const findedContact = await contactRepository.findOneBy({phoneNumber})
     if(findedContact){
         throw new AppError(400, 'Phone number already exists')
