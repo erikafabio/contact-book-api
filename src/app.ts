@@ -5,9 +5,11 @@ import { AppError } from "./errors/appError"
 import { routes } from "./routes/user.routes"
 import routesLogin from "./routes/login.routes"
 import routesContact from "./routes/contact.routes"
+import cors from "cors"
 
 export const app = express()
 app.use(express.json())
+app.use(cors())
 app.use("/users", routes)
 app.use("/login", routesLogin)
 app.use("/contact", routesContact)

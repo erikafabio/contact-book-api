@@ -27,7 +27,7 @@ export class User {
     @Exclude()
     password: string
 
-    @Column()
+    @Column({ default: true })
     isAdm: boolean
 
     @Column({ default: true })

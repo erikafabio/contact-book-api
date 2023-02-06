@@ -7,7 +7,7 @@ import { AppDataSource } from "./data-source"
         console.log("Error durign Data Source initialization", err)
     })
 
-    app.listen(3000, () => {
-        console.log("Server executing on port 3000")
+    app.listen(4000, () => {
+        console.log("Server executing on port 4000")
     })
 })()
