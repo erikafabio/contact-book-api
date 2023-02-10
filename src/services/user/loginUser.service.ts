@@ -5,7 +5,7 @@ import { User } from "../../entities/user.entity"
 import { AppError } from "../../errors/appError"
 import { IUserLogin } from "../../interfaces/user"
 
-export const loginUserService = async ({email, password}: IUserLogin): Promise<string> => {
+export const loginUserService = async ({email, password}: IUserLogin): Promise<object> => {
     const userRepository = AppDataSource.getRepository(User)
 
     const user = await userRepository.findOneBy({ email: email})
@@ -25,5 +25,8 @@ export const loginUserService = async ({email, password}: IUserLogin): Promise<s
         subject: user.id
     })
 
-    return token
+    return {
+        id: user.id,
+        token: token
+    }
 }

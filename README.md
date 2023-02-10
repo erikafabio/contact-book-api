@@ -98,7 +98,7 @@ O objeto User é definido como:
 ### Exemplo de Request:
 ```
 POST /users
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: None
 Content-type: application/json
 ```
@@ -149,7 +149,7 @@ Content-type: application/json
 ### Exemplo de Request:
 ```
 GET /users
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
@@ -195,7 +195,7 @@ Vazio
 ### Exemplo de Request:
 ```
 GET /users/fc98a821-4e08-4333-954d-c0dbde668d6c
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
@@ -241,7 +241,7 @@ Vazio
 ### Exemplo de Request:
 ```
 PATCH /users/fc98a821-4e08-4333-954d-c0dbde668d6c
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
@@ -289,7 +289,7 @@ Content-type: application/json
 ### Exemplo de Request:
 ```
 PATCH /users/fc98a821-4e08-4333-954d-c0dbde668d6c
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
@@ -342,7 +342,7 @@ O objeto de login é definido como:
 ### Exemplo de Request:
 ```
 POST /login
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: None
 Content-type: application/json
 ```
@@ -403,7 +403,7 @@ O objeto Contact é definido como:
 ### Exemplo de Request:
 ```
 POST /contact
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: None
 Content-type: application/json
 ```
@@ -461,7 +461,7 @@ Content-type: application/json
 ### Exemplo de Request:
 ```
 GET /contact
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
@@ -511,7 +511,7 @@ Vazio
 ### Exemplo de Request:
 ```
 PATCH /contact/f2e4b8b6-7e66-43be-8b43-3cb24d6b31a2
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
@@ -557,7 +557,7 @@ Content-type: application/json
 ### Exemplo de Request:
 ```
 PATCH /contact/f2e4b8b6-7e66-43be-8b43-3cb24d6b31a2
-Host: https://localhost:3000/
+Host: https://localhost:4000/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
